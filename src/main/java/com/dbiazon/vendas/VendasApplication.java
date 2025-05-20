@@ -39,7 +39,7 @@ public class VendasApplication implements CommandLineRunner {
 		for (Order orderAll : listOrder) {
 			System.out.println("____________________________");
 			System.out.println("");
-			System.out.println("Saída do primeiro produto");
+			System.out.println("Saída do produto: " + orderAll.getId());
 			System.out.println("Pedido Código " + orderAll.getCode());
 			System.out.println("Valor total: R$ " + orderService.total(orderAll));
 			System.out.println("");
