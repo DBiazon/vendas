@@ -44,9 +44,7 @@ public class OrderService {
 		double discount = order.getDiscount();
 		double basicOrderFinal = basicOrder - (basicOrder * (discount / 100));
 
-		double finalValue = basicOrderFinal + shipmentOrder;
-
-		return finalValue;
+		return basicOrderFinal + shipmentOrder;
 	}
 
 	public boolean codeOrder(double code) {
